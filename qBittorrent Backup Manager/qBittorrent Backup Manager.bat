@@ -19,6 +19,7 @@ SET "MYTIME=initialization"
 SET "ARCHIVE_DIR=%BACKUP_DIR%\Archive"
 SET "ARCHIVE_DATA1=%ARCHIVE_DIR%\qBittorrent\Local"
 SET "ARCHIVE_DATA2=%ARCHIVE_DIR%\qBittorrent\Roaming"
+SET "RESTORE_MODE=DIRTY"
 
 CALL :Header
 
@@ -40,17 +41,17 @@ IF "%IS_EMPTY%" EQU "FALSE" (
     ECHO  Please Choose one of the following options:
     ECHO  [1] Archive Old Backup
     ECHO  [2] Replace Old Backup
-    @REM ECHO  [R] Restore to Old Backup
+    ECHO  [R] Restore to Old Backup
     ECHO  [c] Cancel
     
-	CHOICE /C:12C /N /M " => "
-		IF ERRORLEVEL 3 GOTO :NOPE
-		@REM IF ERRORLEVEL 4 GOTO :RESTORE
-		IF ERRORLEVEL 2 SET "WILL_ARCHIVE=FALSE" && GOTO :NEXT
-		IF ERRORLEVEL 1 SET "WILL_ARCHIVE=TRUE" && GOTO :NEXT
+	CHOICE /C:12RC /N /M " => "
+		IF ERRORLEVEL 4 GOTO :NOPE
+		IF ERRORLEVEL 3 GOTO :RESTORE
+		IF ERRORLEVEL 2 SET "WILL_ARCHIVE=FALSE" && GOTO :BACKUP_NEXT
+		IF ERRORLEVEL 1 SET "WILL_ARCHIVE=TRUE" && GOTO :BACKUP_NEXT
 )
 
-:NEXT
+:BACKUP_NEXT
 IF "%WILL_ARCHIVE%" EQU "TRUE" (
     @REM :ARCHIVE_OLD
     ECHO.
@@ -109,7 +110,44 @@ IF "%NEED_TO_RUN%" EQU "TRUE" (
 @REM SUCCESS SCREEN
 CALL :SUCCESS
 
+
+
 @REM Functions
+:RESTORE
+CLS
+CALL :Header
+@REM Instructions
+ECHO  Override will overwrite current data with backed up one.
+ECHO  Clean Restore will remove current data then restore from backup.
+ECHO  If you don't know which one to pick, choose Override.
+ECHO.
+@REM Step 1 - Ask for restore method
+ECHO  Please Choose one of the following options:
+ECHO  [1] Override
+ECHO  [2] Clean Restore
+ECHO  [c] Cancel
+
+CHOICE /C:12C /N /M " => "
+    IF ERRORLEVEL 3 GOTO :NOPE
+    IF ERRORLEVEL 2 SET "RESTORE_MODE=CLEAN" && GOTO :RESTORE_NEXT
+    IF ERRORLEVEL 1 GOTO :RESTORE_NEXT
+
+:RESTORE_NEXT
+IF "%RESTORE_MODE%" EQU "CLEAN" (
+    ECHO  - Removing current data
+    IF EXIST "%DATA1_DIR%" RMDIR /S /Q "%DATA1_DIR%"
+    IF EXIST "%DATA2_DIR%" RMDIR /S /Q "%DATA2_DIR%"
+    MKDIR "%DATA1_DIR%"
+    MKDIR "%DATA2_DIR%"
+)
+ECHO  - Restoring from backup
+XCOPY /D /S /Y /E "%BACKUP_DIR%\Local\qBittorrent\" "%DATA1_DIR%\" >NUL
+XCOPY /D /S /Y /E "%BACKUP_DIR%\Roaming\qBittorrent\" "%DATA2_DIR%\" >NUL
+
+CALL :SUCCESS
+
+
+
 :NOT_INSTALLED
 ECHO  - qBittorrent is not installed.
 ECHO  Press any key to exit...
