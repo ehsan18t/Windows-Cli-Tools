@@ -1,5 +1,5 @@
 @ECHO OFF
-SET "VERSION=1.0"
+SET "VERSION=1.1"
 MODE con:cols=50 lines=32
 TITLE qBittorrent Backup Manager v%VERSION%
 
