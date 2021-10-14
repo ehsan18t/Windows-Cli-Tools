@@ -73,17 +73,14 @@ NET START ExpressVPNService /Y >NUL 2>&1
 ECHO  	-------------
 ECHO  	^|  SUCCESS  ^|
 ECHO  	-------------
-PAUSE
+CALL :END
 
 
 :NO_SU
 ECHO.
 ECHO  -^> SU Permission Denied!
 ECHO     Please eneble SU from Magisk Manager.
-ECHO.
-ECHO  -^> Press any key to exit...
-PAUSE >NUL 2>&1
-EXIT
+CALL :END
 
 :NO_DEVICES
 ECHO.
@@ -94,10 +91,7 @@ ECHO		* ADB Debugging is not enebled
 ECHO		* Developer Mode is not enebled
 ECHO.
 ECHO     Please solve the problem and try again.
-ECHO.
-ECHO  -^> Press any key to exit...
-PAUSE >NUL 2>&1
-EXIT
+CALL :END
 
 :Header
 COLOR 0F
@@ -111,3 +105,10 @@ ECHO  [1;33mImport trail data from android mobile to
 ECHO  pc and enjoy 7 days free trail.[1;37m
 ECHO.
 EXIT /B
+
+
+:END
+ECHO.
+ECHO  -^> Press any key to exit...
+PAUSE >NUL 2>&1
+EXIT
