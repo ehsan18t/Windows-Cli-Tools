@@ -50,6 +50,7 @@ IF NOT EXIST "%Current_Dir%\*.bin" EXIT >NUL 2>&1
 ECHO  - Killing ExpressVPN
 TASKKILL /IM expressvpn.exe /T /F >NUL 2>&1
 NET STOP ExpressVPNService /Y >NUL 2>&1
+TASKKILL /IM adb.exe /T /F >NUL 2>&1
 
 @REM Cleanups & Setups
 ECHO  - Clearing previous data (^if ^exist)
