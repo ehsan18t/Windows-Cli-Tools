@@ -25,7 +25,7 @@ IF NOT EXIST "%Current_Dir%" MKDIR "%Current_Dir%" >NUL 2>&1
 CD "%Current_Dir%" >NUL 2>&1
 
 ECHO  - Checking ADB
-adb devices -l | find "device product:" >NUL 2>&1
+adb devices -l 2>&1 | find "device product:" >NUL
 if errorlevel 1 GOTO NO_DEVICES
 
 ECHO  - Checking SU Permission
