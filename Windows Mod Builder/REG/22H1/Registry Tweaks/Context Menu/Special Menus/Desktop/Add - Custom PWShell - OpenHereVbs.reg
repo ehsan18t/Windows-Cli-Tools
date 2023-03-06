@@ -1,0 +1,193 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\PWShell]
+"MUIVerb"="Open PowerShell Window"
+"Icon"="%SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\powershell.exe"
+"Extended"=""
+"SubCommands"=""
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\PWShell\shell\1_OpenHere]
+"MUIVerb"="Open here"
+"Icon"="powershell.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\PWShell\shell\1_OpenHere\command]
+@=hex(2):57,00,53,00,63,00,72,00,69,00,70,00,74,00,20,00,25,00,57,00,69,00,6e,\
+  00,44,00,69,00,72,00,25,00,5c,00,4d,00,61,00,67,00,69,00,63,00,58,00,5c,00,\
+  55,00,74,00,69,00,6c,00,6c,00,73,00,5c,00,4f,00,70,00,65,00,6e,00,48,00,65,\
+  00,72,00,65,00,2e,00,76,00,62,00,73,00,20,00,70,00,6f,00,77,00,65,00,72,00,\
+  73,00,68,00,65,00,6c,00,6c,00,20,00,75,00,73,00,65,00,72,00,20,00,22,00,25,\
+  00,56,00,22,00,00,00
+
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\PWShell\shell\2_OpenAsAdmin]
+"MUIVerb"="Open here as Administrator"
+"HasLUAShield"=""
+"Icon"="powershell.exe"
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\PWShell\shell\2_OpenAsAdmin\command]
+@=hex(2):57,00,53,00,63,00,72,00,69,00,70,00,74,00,20,00,25,00,57,00,69,00,6e,\
+  00,44,00,69,00,72,00,25,00,5c,00,4d,00,61,00,67,00,69,00,63,00,58,00,5c,00,\
+  55,00,74,00,69,00,6c,00,6c,00,73,00,5c,00,4f,00,70,00,65,00,6e,00,48,00,65,\
+  00,72,00,65,00,2e,00,76,00,62,00,73,00,20,00,70,00,6f,00,77,00,65,00,72,00,\
+  73,00,68,00,65,00,6c,00,6c,00,20,00,61,00,64,00,6d,00,69,00,6e,00,20,00,22,\
+  00,25,00,56,00,22,00,00,00
+
+
+
+
+
+
+
+
+[HKEY_CLASSES_ROOT\Directory\shell\PWShell]
+"MUIVerb"="Open PowerShell Window"
+"Icon"="%SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\powershell.exe"
+"Extended"=""
+"SubCommands"=""
+
+
+[HKEY_CLASSES_ROOT\Directory\shell\PWShell\shell\1_OpenHere]
+"MUIVerb"="Open here"
+"Icon"="powershell.exe"
+
+[HKEY_CLASSES_ROOT\Directory\shell\PWShell\shell\1_OpenHere\command]
+@=hex(2):57,00,53,00,63,00,72,00,69,00,70,00,74,00,20,00,25,00,57,00,69,00,6e,\
+  00,44,00,69,00,72,00,25,00,5c,00,4d,00,61,00,67,00,69,00,63,00,58,00,5c,00,\
+  55,00,74,00,69,00,6c,00,6c,00,73,00,5c,00,4f,00,70,00,65,00,6e,00,48,00,65,\
+  00,72,00,65,00,2e,00,76,00,62,00,73,00,20,00,70,00,6f,00,77,00,65,00,72,00,\
+  73,00,68,00,65,00,6c,00,6c,00,20,00,75,00,73,00,65,00,72,00,20,00,22,00,25,\
+  00,56,00,22,00,00,00
+
+
+
+[HKEY_CLASSES_ROOT\Directory\shell\PWShell\shell\2_OpenAsAdmin]
+"MUIVerb"="Open here as Administrator"
+"HasLUAShield"=""
+"Icon"="powershell.exe"
+
+[HKEY_CLASSES_ROOT\Directory\shell\PWShell\shell\2_OpenAsAdmin\command]
+@=hex(2):57,00,53,00,63,00,72,00,69,00,70,00,74,00,20,00,25,00,57,00,69,00,6e,\
+  00,44,00,69,00,72,00,25,00,5c,00,4d,00,61,00,67,00,69,00,63,00,58,00,5c,00,\
+  55,00,74,00,69,00,6c,00,6c,00,73,00,5c,00,4f,00,70,00,65,00,6e,00,48,00,65,\
+  00,72,00,65,00,2e,00,76,00,62,00,73,00,20,00,70,00,6f,00,77,00,65,00,72,00,\
+  73,00,68,00,65,00,6c,00,6c,00,20,00,61,00,64,00,6d,00,69,00,6e,00,20,00,22,\
+  00,25,00,56,00,22,00,00,00
+
+
+
+
+
+
+
+
+
+[HKEY_CLASSES_ROOT\Drive\shell\PWShell]
+"MUIVerb"="Open PowerShell Window"
+"Icon"="%SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\powershell.exe"
+"Extended"=""
+"SubCommands"=""
+
+
+[HKEY_CLASSES_ROOT\Drive\shell\PWShell\shell\1_OpenHere]
+"MUIVerb"="Open here"
+"Icon"="powershell.exe"
+
+[HKEY_CLASSES_ROOT\Drive\shell\PWShell\shell\1_OpenHere\command]
+@=hex(2):57,00,53,00,63,00,72,00,69,00,70,00,74,00,20,00,25,00,57,00,69,00,6e,\
+  00,44,00,69,00,72,00,25,00,5c,00,4d,00,61,00,67,00,69,00,63,00,58,00,5c,00,\
+  55,00,74,00,69,00,6c,00,6c,00,73,00,5c,00,4f,00,70,00,65,00,6e,00,48,00,65,\
+  00,72,00,65,00,2e,00,76,00,62,00,73,00,20,00,70,00,6f,00,77,00,65,00,72,00,\
+  73,00,68,00,65,00,6c,00,6c,00,20,00,75,00,73,00,65,00,72,00,20,00,22,00,25,\
+  00,56,00,22,00,00,00
+
+
+
+[HKEY_CLASSES_ROOT\Drive\shell\PWShell\shell\2_OpenAsAdmin]
+"MUIVerb"="Open here as Administrator"
+"HasLUAShield"=""
+"Icon"="powershell.exe"
+
+[HKEY_CLASSES_ROOT\Drive\shell\PWShell\shell\2_OpenAsAdmin\command]
+@=hex(2):57,00,53,00,63,00,72,00,69,00,70,00,74,00,20,00,25,00,57,00,69,00,6e,\
+  00,44,00,69,00,72,00,25,00,5c,00,4d,00,61,00,67,00,69,00,63,00,58,00,5c,00,\
+  55,00,74,00,69,00,6c,00,6c,00,73,00,5c,00,4f,00,70,00,65,00,6e,00,48,00,65,\
+  00,72,00,65,00,2e,00,76,00,62,00,73,00,20,00,70,00,6f,00,77,00,65,00,72,00,\
+  73,00,68,00,65,00,6c,00,6c,00,20,00,61,00,64,00,6d,00,69,00,6e,00,20,00,22,\
+  00,25,00,56,00,22,00,00,00
+
+
+
+
+
+
+
+
+[HKEY_CLASSES_ROOT\LibraryFolder\Background\shell\PWShell]
+"MUIVerb"="Open PowerShell Window"
+"Icon"="%SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\powershell.exe"
+"Extended"=""
+"SubCommands"=""
+
+
+[HKEY_CLASSES_ROOT\LibraryFolder\Background\shell\PWShell\shell\1_OpenHere]
+"MUIVerb"="Open here"
+"Icon"="powershell.exe"
+
+[HKEY_CLASSES_ROOT\LibraryFolder\Background\shell\PWShell\shell\1_OpenHere\command]
+@=hex(2):57,00,53,00,63,00,72,00,69,00,70,00,74,00,20,00,25,00,57,00,69,00,6e,\
+  00,44,00,69,00,72,00,25,00,5c,00,4d,00,61,00,67,00,69,00,63,00,58,00,5c,00,\
+  55,00,74,00,69,00,6c,00,6c,00,73,00,5c,00,4f,00,70,00,65,00,6e,00,48,00,65,\
+  00,72,00,65,00,2e,00,76,00,62,00,73,00,20,00,70,00,6f,00,77,00,65,00,72,00,\
+  73,00,68,00,65,00,6c,00,6c,00,20,00,75,00,73,00,65,00,72,00,20,00,22,00,25,\
+  00,56,00,22,00,00,00
+
+
+
+[HKEY_CLASSES_ROOT\LibraryFolder\Background\shell\PWShell\shell\2_OpenAsAdmin]
+"MUIVerb"="Open here as Administrator"
+"HasLUAShield"=""
+"Icon"="powershell.exe"
+
+[HKEY_CLASSES_ROOT\LibraryFolder\Background\shell\PWShell\shell\2_OpenAsAdmin\command]
+@=hex(2):57,00,53,00,63,00,72,00,69,00,70,00,74,00,20,00,25,00,57,00,69,00,6e,\
+  00,44,00,69,00,72,00,25,00,5c,00,4d,00,61,00,67,00,69,00,63,00,58,00,5c,00,\
+  55,00,74,00,69,00,6c,00,6c,00,73,00,5c,00,4f,00,70,00,65,00,6e,00,48,00,65,\
+  00,72,00,65,00,2e,00,76,00,62,00,73,00,20,00,70,00,6f,00,77,00,65,00,72,00,\
+  73,00,68,00,65,00,6c,00,6c,00,20,00,61,00,64,00,6d,00,69,00,6e,00,20,00,22,\
+  00,25,00,56,00,22,00,00,00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+
+; Disable Narrator
+[HKEY_CURRENT_USER\Software\Microsoft\Narrator\NoRoam]
+"WinEnterLaunchEnabled"=dword:00000000

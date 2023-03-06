@@ -1,0 +1,50 @@
+###########################################
+## Procerss For Making Custom Windows 10 ##
+###########################################
+
+01. Export "Home" Edition with "Export Tool by Ahsan"
+02. Migrate to "Pro" Edition with "Migration Tool by Ahsan"
+03. Change Info with "gimagex"
+04. Integrate Update if Available (DISM++)
+	4.1. Mount Image
+	4.2. Integrate Update
+	4.3. Save & Rebuild Image (Don't Clean Image Yet)
+05. Tweak with DISM++ (Don't enable .NET 3.5 & Don't Use Cleaner)
+	5.1. Mount Image
+	5.2. Tweak Image
+	5.3. Save Image
+	5.4. Unmount Image
+	5.5. Export Image
+06. Remove Unnecessary "Programs & Features" Image with "MSMG Toolkit"
+	6.1. Mount Image
+	6.2. Removes Apps Through "Remove > Remove Windows Components > Windows Apps > All Apps"
+	6.3. Save & Rebuild Image
+07. Clean with DISM++
+	7.1. Mount Image
+	7.2. Clean Image
+	7.3. Save Image
+	7.4. Unmount Image
+	7.5. Export Image
+08. Clean with "MSMG Toolkit"
+	8.1. Mount Image
+	8.2. Clean Image Through "Apply > Cleanup Source Images"
+	8.3. Save & Rebuild Image
+09. Enable .NET 3.5 with DISM++
+	9.1. Mount Image
+	9.2. Enable .NET 3.5 with DISM++
+	9.3. Save Image
+	9.4. Unmount Image
+	9.5. Export Image
+10. Add All REG Tweaks & Programs with "MSMG Toolkit"
+	10.1. Mount Image
+	10.2. Copy REG Tweaks to "Custom\Registry\w10\x64"
+	10.3. Mount Registry Through "Tools > Options > Load Image Registry"
+	10.4. Run The Script for Taking Ownership & Remove Unnecessary Registry
+	10.5. Apply Tweaks Through "Customize > Import Custom Registry Setting from Registry File"
+	10.6. Copy Tweak Files to Mounted Image
+	10.7. Clean Image Through "Apply > Cleanup Source Images"
+	10.8. Save & Rebuild Image
+11. Build ISO
+	11.1. Build ISO Through "Target > Make a DVD ISO Image"
+12. Compress install.wim with wimlib-imagex
+	12.1. wimlib-imagex.exe export install.wim 1 install_New.wim --solid

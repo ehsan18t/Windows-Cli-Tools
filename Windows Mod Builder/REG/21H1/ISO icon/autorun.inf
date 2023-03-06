@@ -1,0 +1,7 @@
+[AutoRun.Amd64]
+open=setup.exe
+icon=sources\icon.ico,0
+
+[AutoRun]
+open=sources\Setup.exe x64
+icon=sources\icon.ico,0

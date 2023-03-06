@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+;Remove windows store taskbar
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"NoPinningStoreToTaskbar"=dword:00000001
+
+; For Installed Windows
+;[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+;"NoPinningStoreToTaskbar"=dword:00000001

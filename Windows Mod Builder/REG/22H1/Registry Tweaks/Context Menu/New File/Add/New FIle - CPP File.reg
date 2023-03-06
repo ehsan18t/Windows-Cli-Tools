@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+; new file type
+[HKEY_CLASSES_ROOT\.cpp]
+@="cpp"
+
+; template
+[HKEY_CLASSES_ROOT\.cpp\ShellNew]
+"FileName"="cpp.cpp"
+
+; file type name
+[HKEY_CLASSES_ROOT\cpp]
+@="CPP File"

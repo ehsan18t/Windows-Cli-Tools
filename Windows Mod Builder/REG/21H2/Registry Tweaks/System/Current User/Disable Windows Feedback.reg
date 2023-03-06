@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+;Disable Windows Feedback
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Siuf\Rules]
+"NumberOfSIUFInPeriod"=dword:00000000
+"PeriodInNanoSeconds"=dword:00000000

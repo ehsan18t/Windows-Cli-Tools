@@ -1,0 +1,2 @@
+title=Win20 32x32
+about=Win20 - Copyright 2020 JonDemon \nwww.jondemon.com

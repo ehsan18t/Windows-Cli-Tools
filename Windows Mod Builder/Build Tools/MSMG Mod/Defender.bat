@@ -1,0 +1,10 @@
+
+call :RemoveWindowsComponent "%InstallMount%", "Assigned Access", "AssignedAccess"
+call :RemoveWindowsComponent "%InstallMount%", "Device Lockdown [Embedded Experience]", "DeviceLockdown"
+call :RemoveWindowsComponent "%InstallMount%", "Security Center", "SecurityCenter"
+call :RemoveWindowsComponent "%InstallMount%", "Azure Active Directory AppX Broker Plugin", "AADBrokerPlugin"
+call :RemoveWindowsComponent "%InstallMount%", "Assigned Access Lock App", "AssignedAccessLockApp"
+call :RemoveWindowsComponent "%InstallMount%", "Bio Enrollment App", "BioEnrollment"
+call :RemoveWindowsComponent "%InstallMount%", "Lockscreen App", "LockApp"
+call :RemoveWindowsComponent "%InstallMount%", "Parental Controls App", "ParentalControls"
+call :RemoveWindowsComponent "%InstallMount%", "Windows Defender App", "WindowsDefender"

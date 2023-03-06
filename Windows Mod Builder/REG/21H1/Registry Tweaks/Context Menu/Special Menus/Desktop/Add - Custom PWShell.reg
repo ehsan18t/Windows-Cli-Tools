@@ -1,0 +1,153 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\PWShell]
+"MUIVerb"="Open PowerShell Window"
+"Icon"="%SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\powershell.exe"
+"Extended"=""
+"SubCommands"=""
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\PWShell\shell\1_OpenHere]
+"MUIVerb"="Open here"
+"Icon"="powershell.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\PWShell\shell\1_OpenHere\command]
+@="powershell.exe -noexit -command Set-Location -literalPath '%V'"
+
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\PWShell\shell\2_OpenAsAdmin]
+"MUIVerb"="Open here as Administrator"
+"HasLUAShield"=""
+"Icon"="powershell.exe"
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\PWShell\shell\2_OpenAsAdmin\command]
+@="PowerShell -windowstyle hidden -Command \"Start-Process cmd -ArgumentList '/s,/k,pushd,%V && start PowerShell && exit' -Verb RunAs\""
+
+
+
+
+
+
+
+
+[HKEY_CLASSES_ROOT\Directory\shell\PWShell]
+"MUIVerb"="Open PowerShell Window"
+"Icon"="%SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\powershell.exe"
+"Extended"=""
+"SubCommands"=""
+
+
+[HKEY_CLASSES_ROOT\Directory\shell\PWShell\shell\1_OpenHere]
+"MUIVerb"="Open here"
+"Icon"="powershell.exe"
+
+[HKEY_CLASSES_ROOT\Directory\shell\PWShell\shell\1_OpenHere\command]
+@="powershell.exe -noexit -command Set-Location -literalPath '%V'"
+
+
+
+[HKEY_CLASSES_ROOT\Directory\shell\PWShell\shell\2_OpenAsAdmin]
+"MUIVerb"="Open here as Administrator"
+"HasLUAShield"=""
+"Icon"="powershell.exe"
+
+[HKEY_CLASSES_ROOT\Directory\shell\PWShell\shell\2_OpenAsAdmin\command]
+@="PowerShell -windowstyle hidden -Command \"Start-Process cmd -ArgumentList '/s,/k,pushd,%V && start PowerShell && exit' -Verb RunAs\""
+
+
+
+
+
+
+
+
+
+[HKEY_CLASSES_ROOT\Drive\shell\PWShell]
+"MUIVerb"="Open PowerShell Window"
+"Icon"="%SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\powershell.exe"
+"Extended"=""
+"SubCommands"=""
+
+
+[HKEY_CLASSES_ROOT\Drive\shell\PWShell\shell\1_OpenHere]
+"MUIVerb"="Open here"
+"Icon"="powershell.exe"
+
+[HKEY_CLASSES_ROOT\Drive\shell\PWShell\shell\1_OpenHere\command]
+@="powershell.exe -noexit -command Set-Location -literalPath '%V'"
+
+
+
+[HKEY_CLASSES_ROOT\Drive\shell\PWShell\shell\2_OpenAsAdmin]
+"MUIVerb"="Open here as Administrator"
+"HasLUAShield"=""
+"Icon"="powershell.exe"
+
+[HKEY_CLASSES_ROOT\Drive\shell\PWShell\shell\2_OpenAsAdmin\command]
+@="PowerShell -windowstyle hidden -Command \"Start-Process cmd -ArgumentList '/s,/k,pushd,%V && start PowerShell && exit' -Verb RunAs\""
+
+
+
+
+
+
+
+
+[HKEY_CLASSES_ROOT\LibraryFolder\Background\shell\PWShell]
+"MUIVerb"="Open PowerShell Window"
+"Icon"="%SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\powershell.exe"
+"Extended"=""
+"SubCommands"=""
+
+
+[HKEY_CLASSES_ROOT\LibraryFolder\Background\shell\PWShell\shell\1_OpenHere]
+"MUIVerb"="Open here"
+"Icon"="powershell.exe"
+
+[HKEY_CLASSES_ROOT\LibraryFolder\Background\shell\PWShell\shell\1_OpenHere\command]
+@="powershell.exe -noexit -command Set-Location -literalPath '%V'"
+
+
+
+[HKEY_CLASSES_ROOT\LibraryFolder\Background\shell\PWShell\shell\2_OpenAsAdmin]
+"MUIVerb"="Open here as Administrator"
+"HasLUAShield"=""
+"Icon"="powershell.exe"
+
+[HKEY_CLASSES_ROOT\LibraryFolder\Background\shell\PWShell\shell\2_OpenAsAdmin\command]
+@="PowerShell -windowstyle hidden -Command \"Start-Process cmd -ArgumentList '/s,/k,pushd,%V && start PowerShell && exit' -Verb RunAs\""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

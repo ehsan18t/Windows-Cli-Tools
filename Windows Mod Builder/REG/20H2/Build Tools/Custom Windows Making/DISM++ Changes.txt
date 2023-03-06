@@ -1,0 +1,72 @@
+Taskbar Settings
+	- 8. Hide People on Taskbar - Y
+
+Security Settings 
+	- 1. Change UAC - Never Notify
+	- 3. Disable Smartscreen - Y
+
+Start & Windows Experience
+	- 1. Disable Suggestion in Start Menu - Y
+	- 2. Disable Search for associated in windows store - Y
+	- 3. Disable ads from Windows Store - Y
+	- 4. Disable windows focus on lockscreen - Y
+	- 5. Disable get suggestion when using windows - Y
+	- 7. Disable automatic installation of recomended apps - Y
+	- 8. Disable game recorder - Y
+	- 9. Enable keypad when login - Y
+	- 10. Disable One drive - Y
+	- 11. Disable Cortana - Y
+
+Explorer
+	- 2. Show extention - Y
+	- 8. Remove Shortcut prefix - Y
+	- 10. Minimize rebon - N
+	- 11. Disable Autoplay - Y
+	- 14. Disable video file preview - Y
+	- 15. Disable Audio file preview - Y
+	- 16. Do not add frequesnt used folder add quick access - Y
+	- 17. Do not add frequesnt used file add quick access - Y
+	- 19. Hide Help button on language Bar
+
+Desktop icon Management
+	- 1. My Computer - Y
+	- 4. user folder Icon - Y
+
+Windows Explorer Navigation panel
+	- 1. Hide Library - Y
+	- 3. Hide Family Group - Y
+	- 4. Hide network - Y
+
+Context Menu
+	- 
+
+
+
+Services
+	- 2. Disable remote Registry - Y
+	- 4. Disable Ip helper - Y
+	- 6. Disable Windows error reporting - Y
+	- 7. Disable Customer experience improvement - Y
+	- 8. Disable Homeroup NTFS Link - Y
+
+
+
+Others 
+	- 4. Disable Hibernate - Y
+	- 3. Disable Hiberboot - Y
+	- .... Disable all logs - Y
+
+
+
+
+Windows Apps and Features - REMOVE
+	- Internet Explorer
+	- MS XPS Document Writer
+	- Media features
+	- Windows Powershell
+	- Print and Document Services
+	- Work Folders Client
+	- Remove all disabled features
+
+
+

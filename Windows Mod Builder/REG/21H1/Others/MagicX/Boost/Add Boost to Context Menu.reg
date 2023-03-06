@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\MagicXBoost]
+"Icon"="%SystemRoot%\\MagicX\\Boost\\Boost.ico"
+"MUIVerb"="Boost"
+"Position"="Middle"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\MagicXBoost\command]
+@="WScript.exe C:\\Windows\\MagicX\\Boost\\Boost.vbs"
+
+
+[HKEY_CLASSES_ROOT\Directory\background\Shell\MagicXBoost]
+"Icon"="%SystemRoot%\\MagicX\\Boost\\Boost.ico"
+"MUIVerb"="Boost"
+"Position"="Middle"
+
+[HKEY_CLASSES_ROOT\Directory\background\Shell\MagicXBoost\command]
+@="WScript.exe C:\\Windows\\MagicX\\Boost\\Boost.vbs"
+
